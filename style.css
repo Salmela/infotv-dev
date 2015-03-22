@@ -1,0 +1,71 @@
+#page {
+	border:1px solid #000;
+	border-radius: 5px;
+	width: 30em;
+}
+
+#page #content {
+	margin: 5px;
+	border:1px solid #000;
+	height: 20em;
+}
+
+#page #nav {
+	margin: 5px;
+}
+
+#page #nav #next {
+	float: right;
+}
+
+#page #nav #prev {
+	float: left;
+}
+
+#clearfix {
+	clear: both;
+}
+
+#login-page {
+	margin: 10px;
+	padding: 10px;
+	width: 26em;
+
+	position: relative;
+	left: 50%;
+	margin-top: 4em;
+	margin-left: -13em;
+
+	border: 1px solid #000;
+	border-radius: 16px;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#login-page #warning {
+	background: #f80;
+	border: 1px solid #840;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+}
+
+#login-page .row {
+	padding: 10px;
+	clear: both;
+}
+
+#login-page .row input {
+	float: right;
+}
+
+#login-page .buttons input {
+	margin: 10px;
+	padding: 5px 10px;
+	clear: both;
+	float: right;
+}
+
+#login-page p {
+	font-size: .8em;
+	clear: both;
+}
