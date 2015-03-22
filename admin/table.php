@@ -36,7 +36,6 @@ class Table {
 		echo "</thead>";
 		echo "<tfoot>";
 		$this->printRow($this->columns);
-		echo "</thead>";
 		echo "</tfoot>";
 	}
 
