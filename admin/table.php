@@ -24,7 +24,7 @@ class Table {
 	function printRow($columns) {
 		echo "<tr>\n";
 		foreach($columns as $column) {
-			echo "\t<td><a href=\"\">" . $column . "</a></td>\n";
+			echo "\t<td>" . $column . "</td>\n";
 		}
 		echo "</tr>\n";
 	}
