@@ -4,15 +4,18 @@ require_once("backend/slides.php");
 class IndexPage {
 	var $slides;
 	var $pageID;
+	var $page;
 	function __construct($id) {
 		$this->slides = new Slides();
 		$this->pageID = $id;
+		$slides = new Slides();
+		$this->page = $slides->getById($id);
 	}
 	function title() {
 		echo "Infotv thingy";
 	}
 	function page() {
-		echo $this->slides->getContent($this->pageID);
+		echo $this->page->getContent();
 	}
 	function nav() {
 		$next = "618";
