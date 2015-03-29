@@ -22,7 +22,7 @@ CREATE TABLE infotv_font_family (
     name char(50) NOT NULL
 );
 
-CREATE TABLE infotv_font (
+CREATE TABLE infotv_font_face (
     font_id SERIAL PRIMARY KEY,
     font_family_id SERIAL REFERENCES infotv_font_family(font_family_id),
     name char(50) NOT NULL
