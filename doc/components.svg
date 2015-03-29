@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.2"
+   width="858"
+   height="990"
+   id="svg3161">
+  <defs
+     id="defs3163">
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(0.8,0,0,0.8,10,0)"
+         id="path4158"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <marker
+       refX="0"
+       refY="0"
+       orient="auto"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         id="path4161"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt" />
+    </marker>
+    <linearGradient
+       id="linearGradient3366">
+      <stop
+         id="stop3368"
+         style="stop-color:#fdd69b;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3370"
+         style="stop-color:#fcaf3e;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3356">
+      <stop
+         id="stop3358"
+         style="stop-color:#acea6f;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3360"
+         style="stop-color:#8ae234;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="359.61432"
+       y1="94.737572"
+       x2="359.61432"
+       y2="392.18933"
+       id="linearGradient3364"
+       xlink:href="#linearGradient3356"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="476.79199"
+       y1="504.83228"
+       x2="476.79199"
+       y2="895.17151"
+       id="linearGradient3372"
+       xlink:href="#linearGradient3366"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <metadata
+     id="metadata3166">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1">
+    <rect
+       width="582.85712"
+       height="297.14282"
+       x="64.285736"
+       y="96.647911"
+       id="rect2985"
+       style="fill:url(#linearGradient3364);fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+    <rect
+       width="97.857147"
+       height="37.142845"
+       x="64.285736"
+       y="96.647911"
+       id="rect2987"
+       style="fill:#8ae234;stroke:#000000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:6.5999999;stroke-opacity:1;stroke-dasharray:none" />
+    <text
+       x="77.52179"
+       y="124.0643"
+       id="text2989"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="77.52179"
+         y="124.0643"
+         id="tspan2991"
+         style="font-size:24px">public</tspan></text>
+    <path
+       d="m 285.23367,240.39121 120.50556,-0.25728"
+       id="path4606"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <rect
+       width="135.95377"
+       height="71.247505"
+       x="149.27991"
+       y="200.19774"
+       id="rect3105"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="217.24872"
+       y="229.0535"
+       id="text3126"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="217.24872"
+         y="229.0535"
+         id="tspan3128">Front page</tspan><tspan
+         x="217.24872"
+         y="253.0535"
+         id="tspan4142">(index.php)</tspan></text>
+    <rect
+       width="713.9986"
+       height="387.095"
+       x="70.000023"
+       y="508.07651"
+       id="rect3334"
+       style="fill:url(#linearGradient3372);fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+    <rect
+       width="192.14285"
+       height="37.142853"
+       x="70.000023"
+       y="508.07651"
+       id="rect3336"
+       style="fill:#fcaf3e;stroke:#000000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:6.5999999;stroke-opacity:1;stroke-dasharray:none" />
+    <text
+       x="83.236069"
+       y="535.49286"
+       id="text3338"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+         x="83.236069"
+         y="535.49286"
+         id="tspan3340"
+         style="font-size:24px">admin panel</tspan></text>
+    <flowRoot
+       id="flowRoot3348"
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><flowRegion
+         id="flowRegion3350"><rect
+           width="20"
+           height="85.714287"
+           x="97.14286"
+           y="33.790752"
+           id="rect3352" /></flowRegion><flowPara
+         id="flowPara3354"></flowPara></flowRoot>    <rect
+       width="135.95377"
+       height="71.247505"
+       x="405.73923"
+       y="200.85303"
+       id="rect4144"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="473.70804"
+       y="229.7088"
+       id="text4146"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="473.70804"
+         y="229.7088"
+         id="tspan4148">Login page</tspan><tspan
+         x="473.70804"
+         y="253.7088"
+         id="tspan4150">(login.php)</tspan></text>
+    <path
+       d="m 462.64987,271.44524 c 0,177.86117 49.76077,147.02805 49.76077,322.70922"
+       id="path4152"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <path
+       d="m 530.18358,594.26412 c 44.72904,-38.89657 82.85743,-21.62045 120.50556,-0.25728"
+       id="path4664"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)" />
+    <path
+       d="M 473.40495,594.00684 C 428.67591,555.11027 390.54752,572.38639 352.89939,593.74956"
+       id="path4666"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)" />
+    <path
+       d="m 473.40495,594.00684 c -68.21247,-59.33983 -176.03996,-50.0675 -257.19032,0.95691"
+       id="path4668"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart);marker-end:url(#Arrow1Lend)" />
+    <path
+       d="M 491.70251,594.15446 C 478.30538,459.35549 300.31494,403.10727 233.3293,271.44524"
+       id="path5040"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <rect
+       width="135.95377"
+       height="71.247505"
+       x="440.61407"
+       y="594.00684"
+       id="rect4598"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="508.58289"
+       y="622.86261"
+       id="text4600"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="508.58289"
+         y="622.86261"
+         id="tspan4602">Slide list</tspan><tspan
+         x="508.58289"
+         y="646.86261"
+         id="tspan4604">(slides.php)</tspan></text>
+    <rect
+       width="135.95377"
+       height="71.247505"
+       x="607.12128"
+       y="594.00684"
+       id="rect4648"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="675.09009"
+       y="622.86261"
+       id="text4650"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="675.09009"
+         y="622.86261"
+         id="tspan4652">User list</tspan><tspan
+         x="675.09009"
+         y="646.86261"
+         id="tspan4654">(slides.php)</tspan></text>
+    <rect
+       width="135.95377"
+       height="71.247505"
+       x="270.27914"
+       y="594.00684"
+       id="rect4616"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="338.24796"
+       y="622.86261"
+       id="text4618"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="338.24796"
+         y="622.86261"
+         id="tspan4620">Theme list</tspan><tspan
+         x="338.24796"
+         y="646.86261"
+         id="tspan4622">(slides.php)</tspan></text>
+    <rect
+       width="135.95377"
+       height="71.247505"
+       x="94.133995"
+       y="594.96375"
+       id="rect4632"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="162.1028"
+       y="623.81952"
+       id="text4634"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="162.1028"
+         y="623.81952"
+         id="tspan4636">Font list</tspan><tspan
+         x="162.1028"
+         y="647.81952"
+         id="tspan4638">(fonts.php)</tspan></text>
+    <path
+       d="m 670.8134,665.25434 0,80.90563"
+       id="path5042"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <path
+       d="m 509.09091,665.25434 0,80.90563"
+       id="path5228"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <path
+       d="m 333.97129,665.25434 0,80.90563"
+       id="path5230"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <path
+       d="m 159.80861,666.21125 0,80.90563"
+       id="path5232"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)" />
+    <rect
+       width="135.95377"
+       height="71.247505"
+       x="440.61407"
+       y="746.15997"
+       id="rect4608"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="508.58289"
+       y="775.01575"
+       id="text4610"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="508.58289"
+         y="775.01575"
+         id="tspan4612">Slide editing</tspan><tspan
+         x="508.58289"
+         y="799.01575"
+         id="tspan4614">(edit.php)</tspan></text>
+    <rect
+       width="159.87721"
+       height="71.247498"
+       x="258.7959"
+       y="746.15997"
+       id="rect4624"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="338.24796"
+       y="775.01575"
+       id="text4626"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="338.24796"
+         y="775.01575"
+         id="tspan4628">Theme editing</tspan><tspan
+         x="338.24796"
+         y="799.01575"
+         id="tspan4630">(theme.php)</tspan></text>
+    <rect
+       width="135.95377"
+       height="71.247505"
+       x="94.133995"
+       y="747.11688"
+       id="rect4640"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="162.1028"
+       y="775.97266"
+       id="text4642"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="162.1028"
+         y="775.97266"
+         id="tspan4644">Font editing</tspan><tspan
+         x="162.1028"
+         y="799.97266"
+         id="tspan4646">(font.php)</tspan></text>
+    <rect
+       width="135.95377"
+       height="71.247505"
+       x="607.12128"
+       y="746.15997"
+       id="rect4656"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+    <text
+       x="675.09009"
+       y="775.01575"
+       id="text4658"
+       xml:space="preserve"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+         x="675.09009"
+         y="775.01575"
+         id="tspan4660">User editing</tspan><tspan
+         x="675.09009"
+         y="799.01575"
+         id="tspan4662">(edit.php)</tspan></text>
+  </g>
+</svg>

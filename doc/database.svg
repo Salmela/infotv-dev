@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="725.37653"
+   height="709.13678"
+   id="svg2">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3115">
+      <stop
+         id="stop3117"
+         style="stop-color:#fce94f;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3119"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3109">
+      <stop
+         id="stop3111"
+         style="stop-color:#fce94f;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3113"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3103">
+      <stop
+         id="stop3105"
+         style="stop-color:#fce94f;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3107"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3097">
+      <stop
+         id="stop3099"
+         style="stop-color:#fce94f;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3101"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3073">
+      <stop
+         id="stop3075"
+         style="stop-color:#fce94f;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3077"
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       x1="409.28571"
+       y1="504.86218"
+       x2="257.13239"
+       y2="504.86218"
+       id="linearGradient3079"
+       xlink:href="#linearGradient3103"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="409.28571"
+       y1="504.86218"
+       x2="257.13239"
+       y2="504.86218"
+       id="linearGradient3083"
+       xlink:href="#linearGradient3097"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="397.85895"
+       y1="504.86218"
+       x2="249.98262"
+       y2="504.86218"
+       id="linearGradient3087"
+       xlink:href="#linearGradient3109"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="409.28571"
+       y1="504.86218"
+       x2="257.13239"
+       y2="504.86218"
+       id="linearGradient3091"
+       xlink:href="#linearGradient3115"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       x1="409.28571"
+       y1="504.86218"
+       x2="257.13239"
+       y2="504.86218"
+       id="linearGradient3095"
+       xlink:href="#linearGradient3073"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     width="582.85712"
+     height="568.57141"
+     x="62.706627"
+     y="64.161919"
+     id="rect2985"
+     style="fill:none;stroke:#000000;stroke-opacity:1" />
+  <rect
+     width="66.428574"
+     height="37.142849"
+     x="62.706627"
+     y="64.161919"
+     id="rect2987"
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:6.5999999;stroke-opacity:1;stroke-dasharray:none" />
+  <text
+     x="75.942688"
+     y="91.578316"
+     id="text2989"
+     xml:space="preserve"
+     style="font-size:32px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+       x="75.942688"
+       y="91.578316"
+       id="tspan2991">uc</tspan></text>
+  <rect
+     width="165.24821"
+     height="50.03429"
+     x="204.0435"
+     y="113.16351"
+     id="rect3105"
+     style="color:#000000;fill:#fce94f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <text
+     x="218.41054"
+     y="145.62506"
+     id="text3126"
+     xml:space="preserve"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="218.41054"
+       y="145.62506"
+       id="tspan3128">infotv_theme</tspan></text>
+  <rect
+     width="232.13565"
+     height="50.034302"
+     x="80.301758"
+     y="292.64478"
+     id="rect3008"
+     style="color:#000000;fill:#fce94f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <text
+     x="94.668793"
+     y="325.10632"
+     id="text3010"
+     xml:space="preserve"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="94.668793"
+       y="325.10632"
+       id="tspan3012">infotv_theme_style</tspan></text>
+  <path
+     d="m 259.12624,163.19779 0,64.72349 -62.75666,0 0,64.7235"
+     id="path3011"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     x="207.82808"
+     y="292.64478"
+     id="text3013"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="207.82808"
+       y="292.64478"
+       id="tspan3015">*</tspan></text>
+  <rect
+     width="156.32991"
+     height="50.034302"
+     x="453.75656"
+     y="185.62488"
+     id="rect3017"
+     style="color:#000000;fill:#fce94f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <text
+     x="468.1236"
+     y="218.08643"
+     id="text3019"
+     xml:space="preserve"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="468.1236"
+       y="218.08643"
+       id="tspan3021">infotv_page</tspan></text>
+  <path
+     d="m 453.75656,210.64203 -42.23243,0 0,-72.46138 -42.23242,0"
+     id="path3023"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     x="444.14114"
+     y="229.4902"
+     id="text3018"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="444.14114"
+       y="229.4902"
+       id="tspan3020">*</tspan></text>
+  <rect
+     width="222.10255"
+     height="50.034302"
+     x="402.4762"
+     y="421.96045"
+     id="rect3022"
+     style="color:#000000;fill:#fce94f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <text
+     x="416.84323"
+     y="454.422"
+     id="text3024"
+     xml:space="preserve"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="416.84323"
+       y="454.422"
+       id="tspan3026">infotv_font_family</tspan></text>
+  <rect
+     width="198.69196"
+     height="50.034302"
+     x="402.4762"
+     y="546.81696"
+     id="rect3028"
+     style="color:#000000;fill:#fce94f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <text
+     x="416.84323"
+     y="579.2785"
+     id="text3030"
+     xml:space="preserve"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="416.84323"
+       y="579.2785"
+       id="tspan3032">infotv_font_face</tspan></text>
+  <path
+     d="m 502.13275,471.99476 0,74.8222"
+     id="path3034"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     x="510.38644"
+     y="546.81696"
+     id="text3036"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="510.38644"
+       y="546.81696"
+       id="tspan3038">*</tspan></text>
+  <path
+     d="m 502.47354,421.96045 0,-102.21264 -190.03613,0"
+     id="path3040"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     x="321.96283"
+     y="339.54718"
+     id="text3031"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="321.96283"
+       y="339.54718"
+       id="tspan3033">*</tspan></text>
+  <rect
+     width="89.457703"
+     height="50.034302"
+     x="167.01212"
+     y="470.00684"
+     id="rect3035"
+     style="color:#000000;fill:#fce94f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <text
+     x="186.89708"
+     y="502.46838"
+     id="text3037"
+     xml:space="preserve"
+     style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="186.89708"
+       y="502.46838"
+       id="tspan3039">user</tspan></text>
+  <path
+     d="m 256.13733,503.36304 75.1,0 0.33248,68.47107 70.90638,0"
+     id="path3041"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 256.13733,486.68494 75.1,0 0.33248,-39.70733 70.90638,0"
+     id="path3043"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 189.37653,470.00684 0,-107.61359 6.99305,-1e-5 0,-19.71416"
+     id="path3045"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 234.10538,470.00684 0,-68.18529 297.81612,0 0,-166.16237"
+     id="path3047"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 256.46981,470.00684 -22.36443,0 -22.36442,0 -22.36443,0 -22.36442,0"
+     id="path3051"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     d="m 211.74096,470.00684 0,-87.89945 148.8134,0 0,-154.18611 -46.34539,0 0,-64.72349"
+     id="path3053"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <text
+     x="197.21437"
+     y="470.00684"
+     id="text3069"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="197.21437"
+       y="470.00684"
+       id="tspan3071">*</tspan></text>
+  <text
+     x="218.11668"
+     y="470.00684"
+     id="text3073"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="218.11668"
+       y="470.00684"
+       id="tspan3075">*</tspan></text>
+  <text
+     x="240.69119"
+     y="470.00684"
+     id="text3077"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="240.69119"
+       y="470.00684"
+       id="tspan3079">*</tspan></text>
+  <text
+     x="263.26569"
+     y="502.89313"
+     id="text3081"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="263.26569"
+       y="502.89313"
+       id="tspan3083">*</tspan></text>
+  <text
+     x="263.26569"
+     y="522.12329"
+     id="text3085"
+     xml:space="preserve"
+     style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Cantarell;-inkscape-font-specification:Cantarell"><tspan
+       x="263.26569"
+       y="522.12329"
+       id="tspan3087">*</tspan></text>
+</svg>
