@@ -71,7 +71,9 @@ class Slides {
 			$res = $this->db->query("SELECT * FROM ". $this->db_table ." p WHERE p.page_id = $id");
 			if($res === false) {
 				echo "<h2>Server error 52216</h2>";
+				//*
 				print_r($this->db->errorInfo());
+				//*/
 				die();
 			}
 			$row = $res->fetch(PDO::FETCH_ASSOC);
@@ -80,6 +82,32 @@ class Slides {
 			die();
 		}
 		return new Slide($row["title"], $row["modified"], $row["content"]);
+	}
+
+	function remove($id) {
+		$res = $this->db->query("DELETE FROM ". $this->db_table ." p WHERE p.page_id = $id");
+		if($res === false) {
+			echo "<h2>Server error 37324</h2>";
+			//*
+			print_r($this->db->errorInfo());
+			//*/
+			die();
+		}
+	}
+
+	function update($id, $title, $content) {
+		$statement = $this->db->prepare("UPDATE ". $this->db_table ." p SET title = ':title', modified = ':modified', content = ':content' WHERE p.page_id = $id");
+		$statement->bindParam(":title", $title);
+		$statement->bindParam(":modified", "");
+		$statement->bindParam(":content", $content);
+		$res = $statement->execute();
+		if($res === false) {
+			echo "<h2>Server error 93216</h2>";
+			//*
+			print_r($this->db->errorInfo());
+			//*/
+			die();
+		}
 	}
 }
 
