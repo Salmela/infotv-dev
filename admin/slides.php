@@ -1,16 +1,18 @@
 <?php
 include("../check.php");
+include("../backend/slides.php");
 include("table.php");
 
-function func($row) {
+function func($slide) {
 	return array(
-		"<a href=\"?page=edit&id=134\">Test</a>",
+		"<a href=\"?page=edit&id=". $slide->getId() ."\">". $slide->getTitle() ."</a>",
 		"12.3.2015",
 		"Aleksi"
 	);
 }
 
-$table = new Table(NULL, array("Name", "Date", "Author"), array());
+$slides = new Slides();
+$table = new Table(NULL, array("Name", "Date", "Author"), $slides->getAll(false));
 $table->setTransformFunc("func");
 ?>
 <h1>Slides</h1>
