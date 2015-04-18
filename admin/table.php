@@ -4,16 +4,16 @@ include("../check.php");
 class Table {
 	var $columns;
 	var $db_table;
-	var $db_columns;
+	var $db_rows;
 	var $transformation_func;
 
-	function __construct($table, $columns, $db_columns) {
+	function __construct($table, $columns, $db_rows) {
 		assert(is_array($columns));
-		assert(is_array($db_columns));
+		assert(is_array($db_rows));
 
 		$this->columns = $columns;
 		$this->db_table = $table;
-		$this->db_columns = $db_columns;
+		$this->db_rows = $db_rows;
 		$this->transformation_func = NULL;
 	}
 
@@ -47,11 +47,14 @@ class Table {
 		$this->startHtml();
 		$func = $this->transformation_func;
 
-		if(isset($this->transformation_func)) {
+		foreach($this->db_rows as $row) {
 			$attributes = array();
-
-			$attributes = $func($attributes);
-			assert(count($attributes) == count($this->columns));
+			if(isset($this->transformation_func)) {
+				$attributes = $func($row);
+				assert(count($attributes) == count($this->columns));
+			} else {
+				$attributes = $row;
+			}
 
 			$this->printRow($attributes);
 		}
