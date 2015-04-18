@@ -14,8 +14,6 @@ function func($slide) {
 $slides = new Slides();
 $table = new Table(NULL, array("Name", "Date", "Author"), $slides->getAll(false));
 $table->setTransformFunc("func");
+
+include("slides_page.php");
 ?>
-<h1>Slides</h1>
-<div id="new-button"><a class="button" href="?page=edit&id=new">New slide</a></div>
-<p>List of all the slides in the system.</p>
-<?php $table->get(); ?>
