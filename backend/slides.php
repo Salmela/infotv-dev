@@ -1,15 +1,20 @@
 <?php
-require_once("config.php");
+require_once("../config.php");
 
 class Slide {
+	var $id;
 	var $title;
 	var $content;
 	var $modified;
 
-	function __construct($title, $modified, $content) {
+	function __construct($id, $title, $modified, $content) {
+		$this->id = $id;
 		$this->title = $title;
 		$this->modified = $modified;
 		$this->content = $content;
+	}
+	function getId() {
+		return $this->id;
 	}
 	function getTheme() {
 		return null;
@@ -42,7 +47,11 @@ class Slides {
 		global $DB_PREFIX;
 
 		try {
-			$res = $this->db->query("SELECT p.title AS title, p.modifed AS modified FROM ". $this->db_table ." p");
+			$res = $this->db->query("SELECT p.page_id AS id, p.title AS title, p.modified AS modified\n".
+				"FROM ". $this->db_table ." p");
+			if($res === false) {
+				return array();
+			}
 			$rows = $res->fetchAll(PDO::FETCH_ASSOC);
 		} catch(PDOException $ex) {
 			echo "<h2>Server error 43578</h2>";
@@ -51,24 +60,25 @@ class Slides {
 
 		$slides = array();
 		foreach($rows as $row) {
-			$slides[] = new Slide($row["title"], $row["modified"], null);
+			$slides[] = new Slide($row["id"], $row["title"], $row["modified"], null);
 		}
 		return $slides;
 	}
 
 	function getById($id) {
 		global $DB_PREFIX;
+		$where_clause = "";
 
-		/* force the $id to be number */
 		if($id === NULL) {
-			/*FIXME: ugly hack */
-			$id = "0 OR 1 = 1";
+			$where_clause = "";
 		} else {
+			/* force the $id to be number */
 			$id = intval($id, 10);
+			$where_clause = " WHERE p.page_id = ". $id;
 		}
 
 		try {
-			$res = $this->db->query("SELECT * FROM ". $this->db_table ." p WHERE p.page_id = $id");
+			$res = $this->db->query("SELECT * FROM ". $this->db_table ." p ". $where_clause);
 			if($res === false) {
 				echo "<h2>Server error 52216</h2>";
 				//*
@@ -77,14 +87,18 @@ class Slides {
 				die();
 			}
 			$row = $res->fetch(PDO::FETCH_ASSOC);
+			if($res->rowCount() == 0) {
+				return NULL;
+			}
 		} catch(PDOException $ex) {
 			echo "<h2>Server error 32446</h2>";
 			die();
 		}
-		return new Slide($row["title"], $row["modified"], $row["content"]);
+		return new Slide($row["page_id"], $row["title"], $row["modified"], $row["content"]);
 	}
 
 	function remove($id) {
+		$id = intval($id, 10);
 		$res = $this->db->query("DELETE FROM ". $this->db_table ." p WHERE p.page_id = $id");
 		if($res === false) {
 			echo "<h2>Server error 37324</h2>";
@@ -95,12 +109,31 @@ class Slides {
 		}
 	}
 
+	function create($id, $title, $content) {
+		$this->__update_internal($id, $title, $content, false);
+	}
 	function update($id, $title, $content) {
-		$statement = $this->db->prepare("UPDATE ". $this->db_table ." p SET title = ':title', modified = ':modified', content = ':content' WHERE p.page_id = $id");
-		$statement->bindParam(":title", $title);
-		$statement->bindParam(":modified", "");
-		$statement->bindParam(":content", $content);
-		$res = $statement->execute();
+		$this->__update_internal($id, $title, $content, true);
+	}
+
+	function __update_internal($id, $title, $content, $exists) {
+		$objects = array();
+		if($exists) {
+			$statement = $this->db->prepare("INSERT INTO ". $this->db_table .
+				" (title, modified, content) VALUES (?, ?, ?)");
+		} else {
+			$statement = $this->db->prepare(
+				"UPDATE ". $this->db_table ." p\n".
+				"SET title = ?, modified = ?, content = ?\n".
+				"WHERE p.page_id = ". $id);
+		}
+		$date = "2";
+		$objects[] = $title;
+		$objects[] = $date;
+		$objects[] = $content;
+		print($statement->queryString);
+		print_r($objects);
+		$res = $statement->execute($objects);
 		if($res === false) {
 			echo "<h2>Server error 93216</h2>";
 			//*
