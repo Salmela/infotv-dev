@@ -1,6 +1,6 @@
 <?php
-include("../check.php");
-include("table.php");
+require_once(dirname(__FILE__) . "/../check.php");
+require_once(dirname(__FILE__) . "/table.php");
 
 function func($row) {
 	return array(

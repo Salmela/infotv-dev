@@ -1,6 +1,7 @@
 <?php
-include("../check.php");
-include("table.php");
+
+require_once(dirname(__FILE__) . "/../check.php");
+require_once(dirname(__FILE__) . "/table.php");
 
 function func($row) {
 	return array(
@@ -13,5 +14,6 @@ function func($row) {
 $table = new Table(NULL, array("Name", "Created", "User"), array());
 $table->setTransformFunc("func");
 
-include("fonts_page.php");
+require_once(dirname(__FILE__) . "/fonts_page.php");
+
 ?>

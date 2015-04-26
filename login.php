@@ -25,5 +25,6 @@ if(isset($error)) {
 	$login = new Login(NULL);
 }
 
-include "login_page.php";
+require(dirname(__FILE__) . "/login_page.php");
+
 ?>

@@ -1,6 +1,7 @@
 <?php
-require_once("../check.php");
-require_once("../backend/slides.php");
+
+require_once(dirname(__FILE__) . "/../check.php");
+require_once(dirname(__FILE__) . "/../backend/slides.php");
 
 class SlideEdit {
 	var $slides;

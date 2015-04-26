@@ -1,5 +1,6 @@
 <?php
-require_once("backend/slides.php");
+
+require_once(dirname(__FILE__) . "/backend/slides.php");
 
 class IndexPage {
 	var $slides;

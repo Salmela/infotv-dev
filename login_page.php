@@ -1,4 +1,4 @@
-<? include "login.php"; ?>
+<? require(dirname(__FILE__) . "/login.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>

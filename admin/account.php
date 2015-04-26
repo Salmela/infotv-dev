@@ -1,6 +1,5 @@
-<?php
-include("../check.php");
-?>
+<?php require_once(dirname(__FILE__) . "/../check.php"); ?>
+
 <h1>Account</h1>
 <p>Here you can modify your personal settings.</p>
 <div class="settings-section">

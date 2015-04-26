@@ -1,7 +1,8 @@
 <?php
-include("../check.php");
-include("../backend/slides.php");
-include("table.php");
+
+require_once(dirname(__FILE__) . "/../check.php");
+require_once(dirname(__FILE__) . "/../backend/slides.php");
+require_once(dirname(__FILE__) . "/table.php");
 
 function func($slide) {
 	return array(
@@ -15,5 +16,6 @@ $slides = new Slides();
 $table = new Table(NULL, array("Name", "Date", "Author"), $slides->getAll(false));
 $table->setTransformFunc("func");
 
-include("slides_page.php");
+require_once(dirname(__FILE__) . "/slides_page.php");
+
 ?>
