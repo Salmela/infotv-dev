@@ -38,10 +38,10 @@ class Slides {
 	var $db_table;
 
 	function __construct() {
-		global $DB_TYPE, $DB_USER, $DB_PASS, $DB_HOST, $DB_NAME, $DB_PREFIX;
+		global $DB_TYPE, $DB_USER, $DB_PASS, $DB_HOST, $DB_NAME, $DB_PREFIX, $DB_FLAGS;
 
 		$this->db_table = $DB_PREFIX ."_pages";
-		$this->db = new PDO($DB_TYPE .":host=". $DB_HOST .";dbname=". $DB_NAME .";charset=UTF8", $DB_USER, $DB_PASS);
+		$this->db = new PDO($DB_TYPE .":host=". $DB_HOST .";dbname=". $DB_NAME .";". $DB_FLAGS, $DB_USER, $DB_PASS);
 	}
 
 	function getAll($extractContent) {
