@@ -7,18 +7,32 @@ class InfotvDBType {
 	var $db;
 	var $db_table;
 	var $name;
+	var $row;
 
-	function __construct($db_table, $name) {
+	function __construct($db_table, $name, $row = NULL) {
 		global $infotv_db, $DB_PREFIX;
 
 		$this->db_table = $DB_PREFIX ."_". $db_table;
 		$this->db = $infotv_db->getPDO();
 		$this->name = $name;
+		$this->row = $row;
 	}
 
-	function getAll($extractContent) {
+	function getAll($row = NULL) {
+		if(isset($row)) {
+			$row = $this->row;
+			if(isset($row)) {
+				print("getAll: row not defined.");
+				die();
+			}
+		}
+		$columns = "";
+		foreach($row as $key => $value) {
+			if($columns != "") $columns .= ", ";
+			$columns .= "r.". $key;
+		}
 		try {
-			$res = $this->db->query("SELECT r.page_id AS id, r.title AS title, r.modified AS modified\n".
+			$res = $this->db->query("SELECT $columns\n".
 				"FROM ". $this->db_table ." r");
 			if($res === false) {
 				return array();
@@ -29,7 +43,11 @@ class InfotvDBType {
 			die();
 		}
 
-		return $rows;
+		$objects = array();
+		foreach($rows as $row) {
+			$objects[] = _object_create($row);
+		}
+		return $objects;
 	}
 
 	function getById($id) {
@@ -62,7 +80,7 @@ class InfotvDBType {
 			echo "<h2>Server error 32446</h2>";
 			die();
 		}
-		return $row;
+		return _object_create($row);
 	}
 
 	function remove($id) {
@@ -95,7 +113,7 @@ class InfotvDBType {
 			print("__update_internal: The id must be number.\n");
 			die();
 		}
-		$objects = new array();
+		$objects = array();
 
 		if(!$exists) {
 			$labels = $question_marks = "";
@@ -133,6 +151,10 @@ class InfotvDBType {
 			//*/
 			die();
 		}
+	}
+
+	function _object_create($row) {
+		return $row;
 	}
 }
 

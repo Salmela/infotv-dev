@@ -11,7 +11,7 @@ class Users extends InfotvDBType {
 		global $infotv_db, $DB_PREFIX;
 		$this->table = $DB_PREFIX ."_users";
 		$this->db = $infotv_db->getPDO();
-		parent::__construct("users", "user");
+		parent::__construct("users", "user", array("user_id", "name", "password_hash", "salt"));
 	}
 	function _root_auth($username, $password) {
 		global $ROOT_USER, $ROOT_PASS;
