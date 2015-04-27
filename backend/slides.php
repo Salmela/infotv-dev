@@ -45,8 +45,6 @@ class Slides {
 	}
 
 	function getAll($extractContent) {
-		global $DB_PREFIX;
-
 		try {
 			$res = $this->db->query("SELECT p.page_id AS id, p.title AS title, p.modified AS modified\n".
 				"FROM ". $this->db_table ." p");
@@ -67,7 +65,6 @@ class Slides {
 	}
 
 	function getById($id) {
-		global $DB_PREFIX;
 		$where_clause = "";
 
 		if($id === NULL) {
