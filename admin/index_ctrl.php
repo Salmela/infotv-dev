@@ -1,7 +1,7 @@
 <?php
 
 define('ADMIN', true);
-require_once(dirname(__FILE__) . "../backend/users.php");
+require_once(dirname(__FILE__) . "/../backend/users.php");
 
 class AdminPanel {
 	var $user;
