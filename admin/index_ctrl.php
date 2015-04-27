@@ -40,7 +40,7 @@ class AdminPanel {
 
 		if(isset($_POST["user"]) && isset($_POST["password"])) {
 			$users = new Users();
-			$res = $users->checkPassword($_POST["user"], $_POST["password"]);
+			$res = $users->authenticate($_POST["user"], $_POST["password"]);
 			if($res) {
 				$_SESSION["user"] = $_POST["user"];
 				return NULL;
