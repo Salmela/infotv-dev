@@ -1,0 +1,13 @@
+ErrorDocument 404 /infotv-dev/admin/index.php
+
+Deny from all
+
+<FilesMatch "index\.php$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "scripts$">
+    Order deny,allow
+    Allow from all
+</FilesMatch>
