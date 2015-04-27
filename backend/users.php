@@ -2,13 +2,16 @@
 
 require_once(dirname(__FILE__) . "/../config.php");
 require_once(dirname(__FILE__) . "/db.php");
+require_once(dirname(__FILE__) . "/db_type.php");
 
-class Users {
+class Users extends InfotvDBType {
 	var $table;
+
 	function __construct() {
 		global $infotv_db, $DB_PREFIX;
 		$this->table = $DB_PREFIX ."_users";
 		$this->db = $infotv_db->getPDO();
+		parent::__construct("users", "user");
 	}
 	function _root_auth($username, $password) {
 		global $ROOT_USER, $ROOT_PASS;
