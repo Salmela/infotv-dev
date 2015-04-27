@@ -119,7 +119,13 @@ class Slides {
 
 	function __update_internal($id, $title, $content, $exists) {
 		$objects = array();
-		if($exists) {
+
+		if(is_int($id)) {
+			print("The id must be number.\n")
+			die();
+		}
+
+		if(!$exists) {
 			$statement = $this->db->prepare("INSERT INTO ". $this->db_table .
 				" (title, modified, content) VALUES (?, ?, ?)");
 		} else {
@@ -132,8 +138,7 @@ class Slides {
 		$objects[] = $title;
 		$objects[] = $date;
 		$objects[] = $content;
-		print($statement->queryString);
-		print_r($objects);
+
 		$res = $statement->execute($objects);
 		if($res === false) {
 			echo "<h2>Server error 93216</h2>";
