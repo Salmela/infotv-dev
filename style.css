@@ -27,6 +27,10 @@
 }
 
 #login-page {
+	background: #eee;
+}
+
+#login-dialog {
 	margin: 10px;
 	padding: 10px;
 	width: 26em;
@@ -41,7 +45,7 @@
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-#login-page #warning {
+#login-dialog #warning {
 	background: #f80;
 	border: 1px solid #840;
 	border-radius: 5px;
@@ -49,23 +53,23 @@
 	margin: 5px;
 }
 
-#login-page .row {
+#login-dialog .row {
 	padding: 10px;
 	clear: both;
 }
 
-#login-page .row input {
+#login-dialog .row input {
 	float: right;
 }
 
-#login-page .buttons input {
+#login-dialog .buttons input {
 	margin: 10px;
 	padding: 5px 10px;
 	clear: both;
 	float: right;
 }
 
-#login-page p {
+#login-dialog p {
 	font-size: .8em;
 	clear: both;
 }

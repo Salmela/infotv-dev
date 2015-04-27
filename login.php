@@ -15,8 +15,8 @@ if(isset($error)) {
 
 	<link rel="stylesheet" href="/infotv-dev/style.css" />
 </head>
-<body>
-<div id="login-page">
+<body id="login-page">
+<div id="login-dialog">
 	<h1>Login</h1>
 <?php $login->errorMsg(); ?>
 <form action="<?php $login->formUrl(); ?>" method="post">
