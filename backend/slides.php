@@ -1,6 +1,7 @@
 <?php
 
 require_once(dirname(__FILE__) . "/../config.php");
+require_once(dirname(__FILE__) . "/db.php");
 
 class Slide {
 	var $id;
@@ -38,10 +39,10 @@ class Slides {
 	var $db_table;
 
 	function __construct() {
-		global $DB_USER, $DB_PASS, $DB_COMMAND, $DB_PREFIX;
+		global $infotv_db, $DB_PREFIX;
 
 		$this->db_table = $DB_PREFIX ."_pages";
-		$this->db = new PDO($DB_COMMAND, $DB_USER, $DB_PASS);
+		$this->db = $infotv_db->getPDO();
 	}
 
 	function getAll($extractContent) {
