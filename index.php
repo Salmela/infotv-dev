@@ -16,6 +16,10 @@ class IndexPage {
 		echo "Infotv thingy";
 	}
 	function page() {
+		if(!isset($this->page)) {
+			echo "There is no pages.";
+			return;
+		}
 		echo $this->page->getContent();
 	}
 	function nav() {
