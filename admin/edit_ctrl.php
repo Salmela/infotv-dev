@@ -19,14 +19,14 @@ class SlideEdit {
 
 	function handleActions() {
 		if(isset($_POST["back"])) {
-			header("location: ?page=slides");
+			header("location: ". $_SERVER["SCRIPT_NAME"] ."?page=slides");
 			return false;
 
 		} else if(isset($_POST["delete"])) {
 			if(isset($this->current)) {
-				$slides->delete($this->id);
+				$this->slides->remove($this->id);
 			}
-			header("location: ?page=slides");
+			header("location: ". $_SERVER["SCRIPT_NAME"] ."?page=slides");
 			return false;
 
 		} else if(isset($_POST["save"])) {
