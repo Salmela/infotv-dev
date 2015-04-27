@@ -1,0 +1,6 @@
+ErrorDocument 404 /infotv-dev/notfound.html
+
+<FilesMatch "_ctrl\.php$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
