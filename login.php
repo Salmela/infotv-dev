@@ -1,4 +1,12 @@
-<? require(dirname(__FILE__) . "/login.php"); ?>
+<?
+require(dirname(__FILE__) . "/login_ctrl.php");
+
+if(isset($error)) {
+	$login = new Login($error);
+} else {
+	$login = new Login(NULL);
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -19,10 +19,4 @@ class Login {
 	}
 }
 
-if(isset($error)) {
-	$login = new Login($error);
-} else {
-	$login = new Login(NULL);
-}
-
 ?>
