@@ -1,6 +1,6 @@
 <?php
 
-require_once("../backend/users.php");
+require_once(dirname(__FILE__) . "/index_ctrl.php");
 
 if(isset($_GET["page"])) {
 	$panel = new AdminPanel($_GET["page"]);
