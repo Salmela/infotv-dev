@@ -12,11 +12,13 @@ class Users {
 	}
 	function _root_auth($username, $password) {
 		global $ROOT_USER, $ROOT_PASS;
-		if($username == $ROOT_USER && $password $ROOT_PASS) {
+		if($username == $ROOT_USER && $password == $ROOT_PASS) {
+			return true;
 		}
+		return false;
 	}
 	function authenticate($username, $password) {
-		if(_root_auth($username, $password)) return true;
+		if($this->_root_auth($username, $password)) return true;
 
 		try {
 			$res = $this->db->prepare("SELECT r.name AS name, r.password_hash AS hash, r.salt AS salt\n".

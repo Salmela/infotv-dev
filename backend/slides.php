@@ -119,7 +119,7 @@ class Slides {
 		$objects = array();
 
 		if(is_int($id)) {
-			print("The id must be number.\n")
+			print("The id must be number.\n");
 			die();
 		}
 
