@@ -19,9 +19,9 @@ class InfotvDBType {
 	}
 
 	function getAll($row = NULL) {
-		if(isset($row)) {
+		if(!isset($row)) {
 			$row = $this->row;
-			if(isset($row)) {
+			if(!isset($row)) {
 				print("getAll: row not defined.");
 				die();
 			}
@@ -54,7 +54,6 @@ class InfotvDBType {
 		$where_clause = "";
 
 		if(is_int($id)) {
-			/* force the $id to be number */
 			$where_clause = " WHERE r.". $this->name ."_id = ". $id;
 		} else if($id === NULL) {
 			$where_clause = "";
@@ -84,7 +83,7 @@ class InfotvDBType {
 	}
 
 	function remove($id) {
-		if(is_int($id)) {
+		if(!is_int($id)) {
 			print("remove: The id must be number.\n");
 			die();
 		}
@@ -109,7 +108,7 @@ class InfotvDBType {
 	function __update_internal($id, $row) {
 		$objects = array();
 
-		if(is_int($id)) {
+		if(!is_int($id)) {
 			print("__update_internal: The id must be number.\n");
 			die();
 		}
