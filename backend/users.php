@@ -15,6 +15,11 @@ class User {
 		$this->name = $name;
 	}
 
+	function setInternal($hash, $salt) {
+		$this->salt = $salt;
+		$this->password_hash = $hash;
+	}
+
 	function getId() {
 		return $this->id;
 	}
@@ -31,9 +36,18 @@ class User {
 		return $this->salt;
 	}
 
+	function _computeHash($password) {
+		$hash = hash("sha256", $this->salt . $password);
+		return substr($hash, 0, 16);
+	}
+
+	function checkPassword($password) {
+		return (_computeHash($password) == $this->password_hash);
+	}
+
 	function setPassword($password) {
 		$this->salt = rand() + "";
-		$this->password_hash = hash("sha256", $this->salt . $password);
+		$this->password_hash = _computeHash($password);
 	}
 }
 
@@ -72,8 +86,9 @@ class Users extends InfotvDBType {
 		}
 
 		if(isset($row)) {
-				$hash = hash("sha256", $row["salt"] . $password);
-				if($hash == $row["hash"]) return true;
+				$user = new User($row["id"], $row["name"]);
+				$user->setInternal($row["hash"], $row["salt"]);
+				if($user->checkPassword($password)) return true;
 		}
 
 		return false;
