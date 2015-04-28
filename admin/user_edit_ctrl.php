@@ -37,10 +37,14 @@ class UserEdit {
 				$panel->appendError("Password were inequal.");
 				return true;
 			}
+
 			if(isset($this->current)) {
-				$this->users->update($this->id, $_POST["name"], $_POST["password"]);
+				$this->current->setPassword($_POST["password"]);
+				$this->users->update($this->id, $this->current);
 			} else {
-				$this->users->create($this->id, $_POST["name"], $_POST["password"]);
+				$this->current = new User(-1, $_POST["name"]);
+				$this->current->setPassword($_POST["password"]);
+				$this->users->create($this->current);
 			}
 		}
 		return true;

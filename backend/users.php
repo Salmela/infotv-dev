@@ -7,6 +7,8 @@ require_once(dirname(__FILE__) . "/db_type.php");
 class User {
 	var $id;
 	var $name;
+	var $password_hash;
+	var $salt;
 
 	function __construct($id, $name) {
 		$this->id = $id;
@@ -19,6 +21,19 @@ class User {
 
 	function getName() {
 		return $this->name;
+	}
+
+	function getHash() {
+		return $this->password_hash;
+	}
+
+	function getSalt() {
+		return $this->salt;
+	}
+
+	function setPassword($password) {
+		$this->salt = rand() + "";
+		$this->password_hash = hash("sha256", $this->salt . $password);
 	}
 }
 
@@ -62,6 +77,15 @@ class Users extends InfotvDBType {
 		}
 
 		return false;
+	}
+
+	function __update_internal($id, $object, $exists) {
+		$row = array(
+			"name" => $object->getName(),
+			"password_hash" => $object->getHash(),
+			"salt" => $object->getSalt()
+		);
+		parent::__update_internal($id, $row, $exists);
 	}
 
 	function _object_create($row) {
