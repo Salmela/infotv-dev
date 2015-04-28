@@ -42,12 +42,12 @@ class User {
 	}
 
 	function checkPassword($password) {
-		return (_computeHash($password) == $this->password_hash);
+		return ($this->_computeHash($password) == $this->password_hash);
 	}
 
 	function setPassword($password) {
 		$this->salt = rand() + "";
-		$this->password_hash = _computeHash($password);
+		$this->password_hash = $this->_computeHash($password);
 	}
 }
 
