@@ -1,5 +1,6 @@
 <?php
 require_once(dirname(__FILE__) . "/../check.php");
+require_once(dirname(__FILE__) . "/../backend/users.php");
 require_once(dirname(__FILE__) . "/table.php");
 
 function func($user) {
@@ -11,7 +12,7 @@ function func($user) {
 	);
 }
 
-$slides = new Users();
+$users = new Users();
 $table = new Table(NULL, array("Name", "Created", "Rights", "Author"), $users->getAll());
 $table->setTransformFunc("func");
 ?>
