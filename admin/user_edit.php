@@ -7,8 +7,8 @@ if(!$page->handleActions()) return;
 <div class="settings-section">
 	<h2>Reset password</h2>
 	<table>
-		<tr><td>Password: </td><td><input type="input" name="password" /></td></tr>
-		<tr><td>Repeat password: </td><td><input type="input" name="repeat" /></td></tr>
+		<tr><td>Password: </td><td><input type="password" name="password" /></td></tr>
+		<tr><td>Repeat password: </td><td><input type="password" name="repeat" /></td></tr>
 	</table>
 </div>
 <div id="buttons">
