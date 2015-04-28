@@ -71,23 +71,23 @@ class Users extends InfotvDBType {
 		if($this->_root_auth($username, $password)) return true;
 
 		try {
-			$res = $this->db->prepare("SELECT r.name AS name, r.password_hash AS hash, r.salt AS salt\n".
-				"FROM ". $this->db_table ." r WHERE ?");
+			$statement = $this->db->prepare("SELECT r.name, r.password_hash, r.salt\n".
+				"FROM ". $this->db_table ." r WHERE r.name = ?");
 			$objects[] = $username;
 
 			$res = $statement->execute($objects);
 			if($res === false) {
 				return array();
 			}
-			$row = $res->fetch(PDO::FETCH_ASSOC);
+			$row = $statement->fetch(PDO::FETCH_ASSOC);
 		} catch(PDOException $ex) {
 			echo "<h2>Server error 45634</h2>";
 			die();
 		}
 
 		if(isset($row)) {
-				$user = new User($row["id"], $row["name"]);
-				$user->setInternal($row["hash"], $row["salt"]);
+				$user = new User($row["user_id"], $row["name"]);
+				$user->setInternal($row["password_hash"], $row["salt"]);
 				if($user->checkPassword($password)) return true;
 		}
 
