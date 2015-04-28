@@ -7,6 +7,7 @@ class SlideEdit {
 	var $slides;
 	var $current;
 	var $id;
+
 	function __construct() {
 		$this->slides = new Slides();
 		$this->current = NULL;
@@ -50,9 +51,16 @@ class SlideEdit {
 			echo $this->current->getContent();
 		}
 	}
-}
-$page = new SlideEdit();
-if(!$page->handleActions()) {
-	return;
+
+	function getThemeOptions() {
+		$themes = new Themes();
+		$theme_arr = $themes->getAll();
+		foreach($theme_arr as $theme) {
+			echo "<option name=\"". $theme->getId() . "\">";
+			echo $theme->getName();
+			echo "</option>";
+		}
+		echo "";
+	}
 }
 ?>

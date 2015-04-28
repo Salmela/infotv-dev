@@ -28,7 +28,7 @@ tinyMCE.init({
 <form action="#" method="post">
 	<input type="text" name="title" id="title" placeholder="Title" value="<?php $page->getTitle(); ?>" />
 	<textarea name="content" id="content-text"><?php $page->getContent(); ?></textarea>
-	<select name="theme"><option name="default">Default theme</option></select>
+	<select name="theme"><option name="default">Default theme</option><?php $page->getThemeOptions(); ?></select>
 	<div id="buttons">
 		<input type="submit" value="Back" name="back" class="button" />
 		<input type="submit" value="Delete" name="delete" class="button" />
