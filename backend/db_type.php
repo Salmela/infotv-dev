@@ -47,7 +47,7 @@ class InfotvDBType {
 
 		$objects = array();
 		foreach($rows as $row) {
-			$objects[] = $this->_object_create($row);
+			$objects[] = $this->object_create($row);
 		}
 		return $objects;
 	}
@@ -81,7 +81,7 @@ class InfotvDBType {
 			echo "<h2>Server error 32446</h2>";
 			die();
 		}
-		return $this->_object_create($row);
+		return $this->object_create($row);
 	}
 
 	function remove($id) {
@@ -148,10 +148,16 @@ class InfotvDBType {
 		if($res === false) {
 			echo "<h2>Server error 93216</h2>";
 			//*
+			print($statement->queryString);
 			print_r($this->db->errorInfo());
 			//*/
 			die();
 		}
+	}
+
+	function object_create($row) {
+		$row["id"] = $row[$this->name ."_id"];
+		return $this->_object_create($row);
 	}
 
 	function _object_create($row) {
