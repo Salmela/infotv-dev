@@ -26,11 +26,13 @@ class InfotvDBType {
 				die();
 			}
 		}
+
 		$columns = "";
-		foreach($row as $key => $value) {
+		foreach($row as $key) {
 			if($columns != "") $columns .= ", ";
 			$columns .= "r.". $key;
 		}
+
 		try {
 			$res = $this->db->query("SELECT $columns\n".
 				"FROM ". $this->db_table ." r");
@@ -45,7 +47,7 @@ class InfotvDBType {
 
 		$objects = array();
 		foreach($rows as $row) {
-			$objects[] = _object_create($row);
+			$objects[] = $this->_object_create($row);
 		}
 		return $objects;
 	}
@@ -79,7 +81,7 @@ class InfotvDBType {
 			echo "<h2>Server error 32446</h2>";
 			die();
 		}
-		return _object_create($row);
+		return $this->_object_create($row);
 	}
 
 	function remove($id) {
