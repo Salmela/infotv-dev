@@ -64,7 +64,7 @@ class InfotvDBType {
 		}
 
 		try {
-			$res = $this->db->query("SELECT * FROM ". $this->db_table ." p ". $where_clause);
+			$res = $this->db->query("SELECT * FROM ". $this->db_table ." r ". $where_clause);
 			if($res === false) {
 				echo "<h2>Server error 52216</h2>";
 				//*
