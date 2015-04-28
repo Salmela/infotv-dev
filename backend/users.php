@@ -4,6 +4,16 @@ require_once(dirname(__FILE__) . "/../config.php");
 require_once(dirname(__FILE__) . "/db.php");
 require_once(dirname(__FILE__) . "/db_type.php");
 
+class User {
+	var $id;
+	var $name;
+
+	function __construct($id, $name) {
+		$this->id = $id;
+		$this->name = $name;
+	}
+}
+
 class Users extends InfotvDBType {
 	var $table;
 
@@ -44,6 +54,10 @@ class Users extends InfotvDBType {
 		}
 
 		return false;
+	}
+
+	function _object_create($row) {
+		return new User($row["id"], $row["name"]);
 	}
 }
 
