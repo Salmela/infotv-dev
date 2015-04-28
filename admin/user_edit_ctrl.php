@@ -33,7 +33,7 @@ class UserEdit {
 			return false;
 
 		} else if(isset($_POST["save"])) {
-			if($_POST["password"] == $_POST["repeat"]) {
+			if($_POST["password"] != $_POST["repeat"]) {
 				$panel->appendError("Password were inequal.");
 				return true;
 			}
