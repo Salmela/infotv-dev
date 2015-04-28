@@ -33,6 +33,7 @@ if(isset($_GET["page"])) {
 </ul>
 </div>
 <div id="content">
+<?php $panel->errorMsg(); ?>
 <?php $panel->getContent(); ?>
 </div>
 

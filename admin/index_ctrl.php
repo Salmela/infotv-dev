@@ -6,6 +6,7 @@ require_once(dirname(__FILE__) . "/../backend/users.php");
 class AdminPanel {
 	var $user;
 	var $pageID;
+	var $errorMsg;
 
 	var $PAGES = array(
 		""       => "slides.php",
@@ -29,6 +30,7 @@ class AdminPanel {
 		}
 		$this->pageID = $pageID;
 		$this->user   = $_SESSION["user"];
+		$this->errorMsg = array();
 
 		if($this->pageID == "logout") {
 			$this->logout();
@@ -70,6 +72,16 @@ class AdminPanel {
 			include $file;
 		} else {
 			include "not_found.php";
+		}
+	}
+
+	function appendError($msg) {
+		$this->errorMsg[] = $msg;
+	}
+
+	function errorMsg() {
+		foreach($this->errorMsg as $msg) {
+			echo "<div id=\"warning\">" . $msg . "</div>";
 		}
 	}
 }
