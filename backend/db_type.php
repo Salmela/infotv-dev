@@ -98,17 +98,17 @@ class InfotvDBType {
 		}
 	}
 
-	function create($id, $title, $content) {
-		$this->__update_internal($id, $title, $content, false);
+	function create($object) {
+		$this->__update_internal(-1, $object, false);
 	}
-	function update($id, $title, $content) {
-		$this->__update_internal($id, $title, $content, true);
+	function update($id, $object) {
+		$this->__update_internal($id, $object, true);
 	}
 
-	function __update_internal($id, $row) {
+	function __update_internal($id, $row, $exists) {
 		$objects = array();
 
-		if(!is_int($id)) {
+		if($exists && !is_int($id)) {
 			print("__update_internal: The id must be number.\n");
 			die();
 		}
