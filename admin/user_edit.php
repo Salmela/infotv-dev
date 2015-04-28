@@ -1,8 +1,9 @@
 <?php
-require_once(dirname(__FILE__) . "/../user_edit_ctrl.php");
-$user = new Users();
+require_once(dirname(__FILE__) . "/user_edit_ctrl.php");
+$page = new UserEdit();
+if(!$page->handleActions()) return;
 ?>
-<input type="text" name="name" id="title" placeholder="Username" value="<?php $user->getName() ?>" />
+<input type="text" name="name" id="title" placeholder="Username" value="<?php $page->getName() ?>" />
 <div class="settings-section">
 	<h2>Reset password</h2>
 	<table>

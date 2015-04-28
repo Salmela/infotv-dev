@@ -11,7 +11,7 @@ class UserEdit {
 	function __construct() {
 		$this->users = new Users();
 		$this->current = NULL;
-		$this->id = $_GET["id"];
+		$this->id = (int)$_GET["id"];
 
 		if(isset($this->id)) {
 			$this->current = $this->users->getById($this->id);
