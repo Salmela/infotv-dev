@@ -52,11 +52,11 @@ class User {
 }
 
 class Users extends InfotvDBType {
-	var $table;
+	var $db_table;
 
 	function __construct() {
 		global $infotv_db, $DB_PREFIX;
-		$this->table = $DB_PREFIX ."_users";
+		$this->db_table = $DB_PREFIX ."_users";
 		$this->db = $infotv_db->getPDO();
 		parent::__construct("users", "user", array("user_id", "name", "password_hash", "salt"));
 	}
