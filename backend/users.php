@@ -37,7 +37,8 @@ class User {
 	}
 
 	function _computeHash($password) {
-		$hash = hash("sha256", $this->salt . $password);
+		$raw_hash = hash("sha256", $this->salt . $password, true);
+		$hash = base64_encode($raw_hash);
 		return substr($hash, 0, 16);
 	}
 
@@ -46,7 +47,8 @@ class User {
 	}
 
 	function setPassword($password) {
-		$this->salt = rand() + "";
+		$salt = mcrypt_create_iv(16, MCRYPT_DEV_URANDOM);
+		$this->salt = base64_encode(rand());
 		$this->password_hash = $this->_computeHash($password);
 	}
 }
