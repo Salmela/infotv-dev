@@ -10,6 +10,10 @@
 	height: 20em;
 }
 
+a:visited {
+	color: #00f;
+}
+
 #page #nav {
 	margin: 5px;
 }
