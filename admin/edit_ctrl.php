@@ -48,7 +48,7 @@ class SlideEdit {
 
 	function getContent() {
 		if(isset($this->current)) {
-			echo $this->current->getContent();
+			echo htmlentities($this->current->getContent());
 		}
 	}
 
