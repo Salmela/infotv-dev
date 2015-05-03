@@ -6,15 +6,14 @@ require_once(dirname(__FILE__) . "/table.php");
 
 function func($theme) {
 	return array(
-		"<a href=\"?page=theme-edit&id=134\">Sport</a>",
+		"<a href=\"?page=theme-edit&id=". $user->getId() ."\">". $user->getName() ."</a>",
 		"12.3.2015",
 		"Aleksi"
 	);
 }
 
 $themes = new Themes();
-$table = new Table(NULL, array("Name", "Created", "Rights", "Author"), $themes->getAll());
-#$table = new Table(NULL, array("Name", "Created", "Author"), array());
+$table = new Table(NULL, array("Name", "Created", "Author"), $themes->getAll());
 $table->setTransformFunc("func");
 
 ?>
