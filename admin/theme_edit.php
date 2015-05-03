@@ -7,7 +7,7 @@ if(!$page->handleActions()) {
 }
 ?>
 <form action="#" method="post">
-	<input type="text" name="title" id="title" placeholder="Theme name" />
+	<input type="text" name="title" id="title" value="<?php $page->getTitle() ?>" placeholder="Theme name" />
 	<div id="buttons">
 		<input type="submit" value="Back" name="back" class="button" />
 		<input type="submit" value="Delete" name="delete" class="button" />
