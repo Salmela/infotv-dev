@@ -6,7 +6,7 @@ require_once(dirname(__FILE__) . "/table.php");
 
 function func($theme) {
 	return array(
-		"<a href=\"?page=theme-edit&id=". $user->getId() ."\">". $user->getName() ."</a>",
+		"<a href=\"?page=theme-edit&id=". $theme->getId() ."\">". $theme->getName() ."</a>",
 		"12.3.2015",
 		"Aleksi"
 	);
