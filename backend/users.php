@@ -88,9 +88,9 @@ class Users extends InfotvDBType {
 		}
 
 		if(isset($row)) {
-				$user = new User($row["user_id"], $row["name"]);
-				$user->setInternal($row["password_hash"], $row["salt"]);
-				if($user->checkPassword($password)) return true;
+			$user = new User($row["user_id"], $row["name"]);
+			$user->setInternal($row["password_hash"], $row["salt"]);
+			if($user->checkPassword($password)) return true;
 		}
 
 		return false;
