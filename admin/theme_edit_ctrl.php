@@ -13,6 +13,7 @@ class ThemeEdit {
 		$this->id = $_GET["id"];
 
 		if(isset($this->id)) {
+			$this->id = (int)$this->id;
 			$this->current = $this->themes->getById($this->id);
 		}
 	}
