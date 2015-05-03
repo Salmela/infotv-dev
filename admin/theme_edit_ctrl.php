@@ -12,10 +12,11 @@ class ThemeEdit {
 		$this->current = NULL;
 		$this->id = $_GET["id"];
 
-		if(isset($this->id)) {
+		if(is_int($this->id)) {
 			$this->id = (int)$this->id;
 			$this->current = $this->themes->getById($this->id);
 		} else {
+			$this->id = NULL;
 			$this->current = new Theme(NULL, NULL);
 		}
 	}
@@ -34,17 +35,18 @@ class ThemeEdit {
 
 		} else if(isset($_POST["save"])) {
 			$this->current->setName($_POST["title"]);
-			if(isset($this->current)) {
+
+			if(isset($this->id)) {
 				$this->themes->update($this->id, $this->current);
 			} else {
-				$this->themes->create($this->id, $this->current);
+				$this->themes->create($this->current);
 			}
 		}
 		return true;
 	}
 
 	function getTitle() {
-		if(isset($this->current)) {
+		if(isset($this->id)) {
 			echo $this->current->getName();
 		}
 	}
