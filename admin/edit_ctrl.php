@@ -2,6 +2,7 @@
 
 require_once(dirname(__FILE__) . "/../check.php");
 require_once(dirname(__FILE__) . "/../backend/slides.php");
+require_once(dirname(__FILE__) . "/../backend/themes.php");
 
 class SlideEdit {
 	var $slides;
